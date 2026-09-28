@@ -1,153 +1,385 @@
-header h1{
-    font-size: 50px;
-    font-family: montserrat,sans-serif;
-    align-items: center;
-   display: inline-block;
-   margin-left: 300px;
+/* =========================
+   BASIC RESET
+========================= */
 
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #12121f;
+    font-family: Montserrat, sans-serif;
+    color: white;
+    overflow-x: hidden;
 }
 
 
+/* =========================
+   HEADER
+========================= */
 
-body{
+header {
+    width: 100%;
+    padding: 25px 20px;
+}
 
-    background-color: #12121f ;
-    font-family: montserrat,sans-serif;
-    color: white;
+.header-items {
+    max-width: 1100px;
+    margin: auto;
+    text-align: center;
+}
+
+.portfolio {
+    font-size: 50px;
+    margin: 0 0 30px 0;
+    font-family: Montserrat, sans-serif;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.nav-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
 }
 
 .button {
-
     cursor: pointer;
-    display: inline-block;
-    font-family:montserrat,sans-serif;
+    font-family: Montserrat, sans-serif;
+
     width: 90px;
     height: 30px;
-    border: 2px solid;
-    border-color: #7C3AED;
-    background-color:  #12121f;
+
+    border: 2px solid #7C3AED;
+    background-color: #12121f;
     border-radius: 20px;
-    color:  #ffffff;
+
+    color: #ffffff;
+
     transition: 0.25s;
-    
 }
 
-.button:hover{
-
+.button:hover {
     box-shadow: 0px 0px 10px #9c5eff;
     color: white;
+
     width: 100px;
     height: 40px;
-    background: linear-gradient(#A855F7,#7C3AED);
-    border-color:#A855F7,#7C3AED;
-    transition: 0.25s;
 
+    background: linear-gradient(#A855F7, #7C3AED);
+    border-color: #A855F7;
+
+    transition: 0.25s;
 }
 
-.button1{
 
+/* =========================
+   GRADIENT TEXT
+========================= */
+
+h1 span {
+    color: transparent;
+    background: linear-gradient(to left, #6224c5, #7C3AED);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+h3 span {
+    color: transparent;
+    background: linear-gradient(to right, #9c5eff, #7C3AED);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+
+/* =========================
+   PAGE 1
+========================= */
+
+.page1 {
+    width: 100%;
+    max-width: 900px;
+
+    margin: 0 auto;
+    padding: 50px 30px;
+
+    font-size: 20px;
+
+    min-height: 100vh;
+}
+
+.page1 h3 {
+    margin-top: 0;
+}
+
+.page1 h1 {
+    font-size: 45px;
+}
+
+.intro {
+    display: block;
+    max-width: 700px;
+}
+
+.intro p {
+    line-height: 1.5;
+    margin: 20px 0;
+}
+
+
+/* =========================
+   WEBSITE BUTTON
+========================= */
+
+.button1 {
     cursor: pointer;
     display: inline-block;
-    font-family:montserrat,sans-serif;
-    width: 120px;
+
+    font-family: Montserrat, sans-serif;
+
+    width: 150px;
     height: 50px;
-    border: 2px solid;
-    border-color: #7C3AED;
-    background-color:  #12121f;
+
+    border: 2px solid #7C3AED;
+    background-color: #12121f;
+
     border-radius: 20px;
-    color:  #ffffff;
+
+    color: #ffffff;
+
     transition: 0.25s;
-   
 }
 
-.button1:hover{
-
+.button1:hover {
     box-shadow: 0px 0px 10px #9c5eff;
+
     color: white;
-    width: 125px;
+
+    width: 155px;
     height: 55px;
-    background: linear-gradient(#A855F7,#7C3AED);
-    border-color:#A855F7,#7C3AED;
-    transition: 0.25s;
 
+    background: linear-gradient(#A855F7, #7C3AED);
+
+    border-color: #A855F7;
 }
 
 
+/* =========================
+   PAGE 2 - SKILLS
+========================= */
 
+.page2 {
+    width: 100%;
+    max-width: 1100px;
 
-h1 span{
-    color: transparent;
-    background: linear-gradient(to left, #6224c5,#7C3AED);
-    background-clip: text;
-    
+    margin: 0 auto;
+    padding: 50px 30px;
+
+    min-height: 100vh;
 }
 
-h3 span{
-
-    color: transparent;
-    background: linear-gradient(to right, #9c5eff,#7C3AED);
-    background-clip: text;
-}
-
-
-.page1{
-    font-size: 20px;
-    margin-left: 300px;
-    height: 100vh;
-    display: inline-table;
-}
-
-.myskills{
-    
+.myskills {
     font-size: 50px;
 }
 
-.skillstexts{
+.skillstexts {
     font-size: 25px;
 }
 
-
-.page2{
-   
-    height: 100vh;
+.page2 > img {
+    max-width: 500px;
+    width: 100%;
 }
 
-img{
+
+/* =========================
+   THUMBNAILS
+========================= */
+
+.thumbs {
     width: 500px;
+    max-width: 100%;
+
+    opacity: 10%;
+
+    transition: 0.3s;
 }
 
-.page2{
-    font-size: 15px;
-    display: inline-block;
-    margin-left: 300px;
-    height: 100vh;
-}
-
-.thumbs{
-   opacity: 10%;
-   
-
-}
-
-.thumbs:hover{
+.thumbs:hover {
     opacity: 100%;
-    size: 10px;
     box-shadow: 4px 3px 10px #9c5eff;
-  
 }
 
- .favimgs{
 
+/* =========================
+   PAGE 3
+========================= */
+
+.page3 {
+    width: 100%;
+    max-width: 1100px;
+
+    margin: 0 auto;
+    padding: 50px 30px;
+
+    min-height: 100vh;
+
+    font-size: 25px;
+}
+
+.favimgs {
     display: flex;
     flex-direction: row;
+    gap: 30px;
+    flex-wrap: wrap;
+}
 
- }
-
-.page3{
-    font-size: 25px;
-    margin-left: 300px;
-    height: 100vh;
+.Rajasaab,
+.dhoni {
+    max-width: 500px;
+    width: 100%;
 }
 
 
+/* =========================
+   FOOTER
+========================= */
 
+.footer {
+    text-align: center;
+    padding: 30px 20px;
+}
+
+
+/* ==================================================
+   MOBILE
+================================================== */
+
+@media screen and (max-width: 600px) {
+
+    header {
+        padding: 20px 10px;
+    }
+
+    .portfolio {
+        font-size: 34px;
+        margin-bottom: 25px;
+    }
+
+
+    /* Navigation */
+
+    .nav-buttons {
+        gap: 6px;
+    }
+
+    .button {
+        width: 85px;
+        height: 30px;
+        font-size: 12px;
+    }
+
+
+    /* PAGE 1 */
+
+    .page1 {
+        width: 100%;
+        max-width: 100%;
+
+        margin: 0;
+        padding: 35px 25px;
+
+        font-size: 17px;
+    }
+
+    .page1 h3 {
+        font-size: 20px;
+    }
+
+    .page1 h1 {
+        font-size: 35px;
+        line-height: 1.1;
+    }
+
+    .intro {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .intro p {
+        font-size: 17px;
+        line-height: 1.45;
+        margin: 18px 0;
+    }
+
+
+    /* PAGE 2 */
+
+    .page2 {
+        width: 100%;
+        max-width: 100%;
+
+        margin: 0;
+        padding: 35px 20px;
+    }
+
+    .myskills {
+        font-size: 35px;
+    }
+
+    .skillstexts {
+        font-size: 18px;
+        line-height: 1.5;
+    }
+
+    .thumbs {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+
+    /* PAGE 3 */
+
+    .page3 {
+        width: 100%;
+        max-width: 100%;
+
+        margin: 0;
+        padding: 35px 20px;
+
+        font-size: 20px;
+    }
+
+    .favimgs {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .Rajasaab,
+    .dhoni {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+
+    /* FOOTER */
+
+    .footer {
+        font-size: 14px;
+        padding: 25px 15px;
+    }
+}
