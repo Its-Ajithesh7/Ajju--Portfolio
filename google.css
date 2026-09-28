@@ -149,3 +149,55 @@ img{
     height: 100vh;
 }
 
+@media (max-width: 600px) {
+
+    body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    /* Main content */
+    .about,
+    .about-section,
+    .content,
+    main {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    /* Navigation */
+    nav {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    nav a {
+        margin: 0;
+    }
+
+    /* Headings */
+    h1 {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    /* Text */
+    p {
+        font-size: 17px;
+        line-height: 1.5;
+    }
+}
+
+
