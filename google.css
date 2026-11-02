@@ -258,7 +258,10 @@ h3 span {
 
 .footer {
     text-align: center;
-    padding: 30px 20px;
+   text-align: center;
+    padding: 20px;
+    background-color: rgb(28, 28, 28);
+    color: grey;
 }
 
 
@@ -380,6 +383,9 @@ h3 span {
 
     .footer {
         font-size: 14px;
-        padding: 25px 15px;
+       text-align: center;
+    padding: 20px;
+    background-color: rgb(28, 28, 28);
+    color: grey;
     }
 }
